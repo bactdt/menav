@@ -1,0 +1,63 @@
+# pages/home.yml示例
+title: "我的主页"          # 页面标题
+subtitle: "常用网站导航"   # 页面副标题
+
+# 分类和网站配置
+categories:
+  - name: "常用工具"          # 分类名称
+    icon: "fas fa-tools"      # 分类图标
+    sites:                    # 该分类下的网站列表
+      - name: "GitHub"        # 网站名称
+        url: "https://github.com"  # 网站链接
+        icon: "fab fa-github"      # 网站图标
+        description: "全球最大的代码托管平台"  # 网站描述
+      - name: "perplexity"
+        url: "https://www.perplexity.ai"
+        icon: "fab fa-airbnb"
+        description: "perplexity" 
+      - name: "infiniCloud"
+        url: "https://infini-cloud.net"
+        icon: "fab fa-cloud"
+        description: "infiniCloud" 
+      - name: "cloudfare"
+        url: "https://dash.cloudflare.com"
+        icon: "fab fa-link"
+        description: "cloudfare"
+  - name: 论坛
+    icon: fas fa-folder
+    sites:
+      - name: V2EX
+        url: https://www.v2ex.com
+        icon: fas fa-link
+        description: "V2EX"
+      - name: 全球主机
+        url: https://hostloc.com
+        icon: fas fa-link
+        description: "全球主机"
+      - name: NodeSeek
+        url: https://www.nodeseek.com
+        icon: fas fa-link
+        description: "NodeSeek"
+      - name: LINUX DO - 新的理想型社区
+        url: https://linux.do
+        icon: fas fa-linux
+        description: "LINUX"
+      - name: 数字居民论坛
+        url: https://shuzijumin.com
+        icon: fas fa-link
+        description: "数字居民论坛"
+      - name: ShareMjj
+        url: https://share.cjy.me
+        icon: fas fa-link
+        description: "ShareMjj"
+  - name: "在线网站"          
+    icon: "fas fa-wrench"     
+    sites:
+      - name: "ip查询工具"
+        url: "https://ip.tsy.ink"
+        icon: "fab fa-tablet-screen-button"
+        description: "ip纯净度"
+      - name: "站长工具"
+        url: "https://ping.chinaz.com"
+        icon: "fab fa-tablet-screen-button"
+        description: "站长工具"

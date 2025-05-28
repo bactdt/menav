@@ -1,0 +1,10 @@
+- name: 首页
+  icon: fas fa-home
+  id: home
+  active: true
+- name: 书签
+  icon: fas fa-bookmark
+  id: bookmarks 
+- name: 小网站
+  icon: fas fa-bookmark
+  id: web

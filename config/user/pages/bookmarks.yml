@@ -1,0 +1,211 @@
+title: 我的书签
+subtitle: 从浏览器导入的书签收藏
+
+# 指定使用的模板文件名，现有页面模板可见templates\pages
+template: bookmarks
+
+categories:
+  - name: 谷歌系
+    icon: fas fa-folder
+    sites:
+      - name: youtube
+        url: https://youtube.com/
+        icon: fab fa-youtube
+        description: "从书签导入: youtube"
+      - name: 云端硬盘
+        url: https://drive.google.com/drive/my-drive
+        icon: fab fa-google-drive
+      - name: blooger
+        url: https://www.blogger.com/
+        icon: fa fa-blogger
+  - name: "开发者的好助手"
+    icon: fas fa-folder
+    sites:
+      - name: "clerk"
+        url: "https://clerk.com"
+        icon: fab fa-link
+        decription: "clerk"
+      - name: "upstash"
+        url: "https://console.upstash.com"
+        icon: fab fa-link
+        decription: "upstash 免费Redis"
+      - name: "vercel"
+        url: "https://vercel.com"
+        icon: fab fa-link
+        decription: "vercel"
+  - name: 图床
+    icon: fas fa-folder
+    sites:
+      - name: 图床
+        url: https://www.superbed.cn
+        icon: fab fa-images
+        description: "从书签导入: 图床"
+  - name: 学习
+    icon: fas fa-folder
+    sites:
+      - name: 蓝桥
+        url: https://www.lanqiao.cn/cup/select-subject/
+        icon: fab fa-gamepad
+        description: "蓝桥"
+      - name: roadmap
+        url: https://neetcode.io/roadmap
+        icon: fab fa-github
+        description: "roadmap"
+      - name: pta
+        url: https://pintia.cn/problem-sets/dashboard
+        icon: fab fa-link
+        description: "pta"
+      - name: 题库
+        url: https://acmore.cc/
+        icon: fas fa-link
+        description: "题库"
+      - name: 资源统计
+        url: http://sdtsg.umajor.net/resources_statistics.html
+        icon: fas fa-link
+        description: "资源统计"
+      - name: "MIT18.01/18.02: Calculus - CS自学指南"
+        url: https://csdiy.wiki/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/MITmaths/
+        icon: fas fa-link
+        description: "CS自学指南"
+      - name: 全国计算机技术与软件专业技术资格（水平）考试
+        url: https://bm.ruankao.org.cn/sign/up
+        icon: fas fa-link
+        description: "软考"
+      - name: C语言学习 | Home
+        url: http://oj.lgwenda.com/
+        icon: fas fa-link
+        description: "c语言"
+      - name: 软考资料分享
+        url: https://docs.qq.com/sheet/DY2xrbXVYb0xBc1N4?tab=BB08J2
+        icon: fas fa-link
+        description: "软考资料分享"
+  - name: 论坛
+    icon: fas fa-folder
+    sites:
+      - name: V2EX
+        url: https://www.v2ex.com
+        icon: fas fa-link
+        description: "V2EX"
+      - name: 全球主机
+        url: https://hostloc.com
+        icon: fas fa-link
+        description: "全球主机"
+      - name: NodeSeek
+        url: https://www.nodeseek.com
+        icon: fas fa-link
+        description: "NodeSeek"
+      - name: LINUX DO - 新的理想型社区
+        url: https://linux.do
+        icon: fas fa-linux
+        description: "LINUX"
+      - name: 数字居民论坛
+        url: https://shuzijumin.com
+        icon: fas fa-link
+        description: "数字居民论坛"
+      - name: ShareMjj
+        url: https://share.cjy.me
+        icon: fas fa-link
+        description: "ShareMjj"
+  - name: 影视
+    icon: fas fa-folder
+    sites:
+      - name: 不太灵影视_4k高清电影下载_蓝光迅雷电影下载_最新电视剧下载
+        url: https://www.2bt0.com/
+        icon: fas fa-link
+        description: "不太灵影视"
+      - name: WarHut影视
+        url: https://v.warhut.cn/
+        icon: fas fa-link
+        description: "WarHut影视"
+      - name: 青年影视
+        url: https://tv.52qn.top/
+        icon: fas fa-link
+        description: "青年影视"
+      - name: 灰太狼影视 - 影视大全在线追剧
+        url: https://www.minjiancai.com/?btwaf=78325134
+        icon: fas fa-link
+        description: "灰太狼影视"
+      - name: 观影 GYING
+        url: https://www.gyg.la/
+        icon: fas fa-link
+        description: "观影"
+  - name: ai
+    icon: fas fa-folder
+    sites:
+      - name: dmxapi
+        url: https://www.dmxapi.com/token
+        icon: fas fa-link
+        description: "dmxapi"
+      - name: promote
+        url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh?tab=readme-ov-file
+        icon: fab fa-github
+        description: "promote提示词"
+      - name: Linux Do – Chat Web UI for Linux Do
+        url: https://typingmind-linuxdo.pages.dev/
+        icon: fas fa-link
+        description: "Chat Web UI"
+      - name: DEV API
+        url: https://api.crond.dev/token
+        icon: fas fa-link
+        description: "DEV"
+      - name: NextChat
+        url: https://chat.toapis.org/#/chat
+        icon: fas fa-link
+        description: "NextChat"
+      - name: HF Space Manager -控制面板
+        url: https://esesseska-apikey.hf.space/dashboard
+        icon: fas fa-link
+        description: "HF Space Manager"
+      - name: 示例工作区 - AI as Workspace
+        url: https://aiaw.app/workspaces/1ij5knvrk48ogpmmnm
+        icon: fas fa-link
+        description: "AI as Workspace"
+      - name: EAI API
+        url: https://api.cymru/pricing
+        icon: fas fa-link
+        description: "EAI API"
+  - name: mac
+    icon: fas fa-folder
+    sites:
+      - name: MacApp分享频道 - 精品Mac资源分享
+        url: https://macapp.org.cn/
+        icon: fas fa-link
+        description: "MacApp分享频道"
+      - name: MacKed
+        url: https://macked.app/
+        icon: fas fa-link
+        description: "MacKed"
+      - name: JetBrains 系列全家桶激活服务器
+        url: https://jetbrains-plum.vercel.app/
+        icon: fas fa-link
+        description: "JetBrains 系列全家桶激活服务器"
+      - name: JetBrains 系列全家桶激活服务器
+        url: https://jbls.ide-soft.com
+        icon: fas fa-link
+        description: "JetBrains 系列全家桶激活服务器"
+  - name: esim
+    icon: fas fa-mobile-screen-button
+    sites:
+      - name: eSIM 转 SIM 实体卡 | 回声
+        url: https://iecho.cc/2023/10/20/Convert-eSIM-to-physical-SIM/#Windows%E3%80%81macOS-%E5%92%8C-Linux-%E5%B9%B3%E5%8F%B0
+        icon: fas fa-link
+        description: "esim转换"
+  - name: 接码
+    icon: fas fa-folder
+    sites:
+      - name: 天启
+        url: https://web.tqsms.xyz/#/message/getCode
+        icon: fas fa-link
+        description: "天启"
+      - name: 豪猪
+        url: https://h5.haozhuma.cn/index.php
+        icon: fas fa-link
+        description: "豪猪"
+      - name: 椰子
+        url: http://h5.yezi66.net:90/invite/803355#/work
+        icon: fas fa-link
+        description: "椰子"
+      - name: 谷歌临时邮箱
+        url: https://22.do
+        icon: fas fa-link
+        description: "谷歌临时邮箱"
