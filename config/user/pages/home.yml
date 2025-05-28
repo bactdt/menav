@@ -50,6 +50,18 @@ categories:
         url: https://share.cjy.me
         icon: fas fa-link
         description: "ShareMjj"
+  - name: "email"
+    icon: "fas fa-wrench"
+    sites:
+      - name: "163邮箱"
+        url: "https://mail.163.com"
+        icon: "ab fa-tablet-screen-button"
+      - name: "proton"
+        url: "https://proton.me/mail"
+        icon: "ab fa-tablet-screen-button"
+      - name: "google mail"
+        url: "https://mail.google.com"
+        icon: "ab fa-tablet-screen-button"
   - name: "在线网站"          
     icon: "fas fa-wrench"     
     sites:
