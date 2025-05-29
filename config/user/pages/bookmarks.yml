@@ -33,6 +33,10 @@ categories:
         url: "https://vercel.com"
         icon: fab fa-link
         description: "vercel"
+      - name: 正则学习
+        url: https://regexr.com
+        icon: fas fa-link
+        description: "正则学习"
   - name: "图床"
     icon: fas fa-folder
     sites:
@@ -64,11 +68,11 @@ categories:
         icon: fas fa-link
         description: "题库"
       - name: 资源统计
-        url: http://sdtsg.umajor.net/resources_statistics.html
+        url: http://zkdmt.vipexam.cn/sdtsglogin.html
         icon: fas fa-link
         description: "资源统计"
       - name: "MIT18.01/18.02: Calculus - CS自学指南"
-        url: https://csdiy.wiki/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/MITmaths/
+        url: https://csdiy.wiki
         icon: fas fa-link
         description: "CS自学指南"
       - name: 全国计算机技术与软件专业技术资格（水平）考试
@@ -168,6 +172,18 @@ categories:
         url: https://api.cymru/pricing
         icon: fas fa-link
         description: "EAI API"
+      - name: 提示词
+        url: https://www.aishort.top
+        icon: fas fa-link
+        description: "提示词分享网站"
+      - name: 提示词记事本
+        url: https://accounts.prompt-manager.19921014.xyz/sign-in
+        icon: fas fa-link
+        description: "提示词记事本"
+      - name: 提示词国外
+        url: https://www.promptgenius.site
+        icon: fas fa-link
+        description: "提示词国外"
   - name: mac
     icon: fas fa-folder
     sites:
@@ -225,3 +241,19 @@ categories:
         url: https://22.do
         icon: fas fa-link
         description: "谷歌临时邮箱"
+  - name: 好玩的东东
+    icon: fas fa-folder
+    sites:
+      - name: 朋友圈点赞生成器
+        url: https://akarin.dev/WechatMomentScreenshot/
+        icon: fas fa-link
+        description: "好玩的东东"
+      - name: 粤语翻译
+        url: https://yue.micblo.com
+        icon: fas fa-link
+        description: "粤语翻译"
+      - name: 在线正则匹配
+        url: https://regex-vis.com
+        icon: fas fa-link
+        description: "在线正则匹配"
+      
