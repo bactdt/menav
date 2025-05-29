@@ -24,15 +24,15 @@ categories:
       - name: "clerk"
         url: "https://clerk.com"
         icon: fab fa-link
-        decription: "clerk"
-      "upstash"
+        description: "clerk"
+      - name: "upstash"
         url: "https://console.upstash.com"
         icon: fab fa-link
-        decription: "upstash 免费Redis"
+        description: "upstash 免费Redis"
       - name: "vercel"
         url: "https://vercel.com"
         icon: fab fa-link
-        decription: "vercel"
+        description: "vercel"
   - name: "图床"
     icon: fas fa-folder
     sites:
