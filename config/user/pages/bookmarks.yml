@@ -25,7 +25,7 @@ categories:
         url: "https://clerk.com"
         icon: fab fa-link
         decription: "clerk"
-      - name: "upstash"
+      "upstash"
         url: "https://console.upstash.com"
         icon: fab fa-link
         decription: "upstash 免费Redis"
@@ -34,16 +34,16 @@ categories:
         icon: fab fa-link
         decription: "vercel"
   - name: "图床"
-   icon: fas fa-folder
-   sites:
-     - name: "图床"
-       url: https://www.superbed.cn
-       icon: fab fa-images
-       description: " 图床"
-     - name: "picgo 免费图床" 
-       url: "https://www.picgo.net"
-       icon: fab fa-images
-       description: "picgo图床"
+    icon: fas fa-folder
+    sites:
+      - name: "图床"
+        url: https://www.superbed.cn
+        icon: fab fa-images
+        description: " 图床"
+      - name: "picgo 免费图床" 
+        url: "https://www.picgo.net"
+        icon: fab fa-images
+        description: "picgo图床"
   - name: 学习
     icon: fas fa-folder
     sites:
