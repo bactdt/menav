@@ -28,16 +28,16 @@ categories:
     sites:
       - name: "163邮箱"
         url: "https://mail.163.com"
-        icon: "ab fa-tablet-screen-button"
+        icon: "fab fa-tablet-screen-button"
       - name: "proton"
         url: "https://proton.me/mail"
-        icon: "ab fa-tablet-screen-button"
+        icon: "fab fa-tablet-screen-button"
       - name: "google mail"
         url: "https://mail.google.com"
-        icon: "ab fa-tablet-screen-button"
+        icon: "fab fa-tablet-screen-button"
       - name: "yeah.net"
         url: "https://mail.yeah.net"
-        icon: "ab fa-tablet-screen-button"
+        icon: "fab fa-tablet-screen-button"
   - name: 论坛
     icon: fas fa-folder
     sites:
