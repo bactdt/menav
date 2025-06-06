@@ -76,3 +76,10 @@ categories:
         url: "https://ping.chinaz.com"
         icon: "fab fa-tablet-screen-button"
         description: "站长工具"
+  - name: "music"
+    icon: "fas -fa-wernch"
+    sites:
+      - name: "splayer"
+        url: "https://music.ydev.tech/"
+        icon: "fab fa-music"
+        description: "音乐"
