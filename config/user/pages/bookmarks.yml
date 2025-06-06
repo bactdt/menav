@@ -55,10 +55,10 @@ categories:
         url: https://www.lanqiao.cn/cup/select-subject/
         icon: fab fa-gamepad
         description: "蓝桥"
-      - name: roadmap
+      - name: 力扣
         url: https://neetcode.io/roadmap
         icon: fab fa-github
-        description: "roadmap"
+        description: "力扣"
       - name: pta
         url: https://pintia.cn/problem-sets/dashboard
         icon: fab fa-link
@@ -87,6 +87,10 @@ categories:
         url: https://docs.qq.com/sheet/DY2xrbXVYb0xBc1N4?tab=BB08J2
         icon: fas fa-link
         description: "软考资料分享"
+      - name: 四六级真题
+        url: https://www.wehuster.com/
+        icon: fas fa-link
+        description: "四六级真题"
   - name: 论坛
     icon: fas fa-folder
     sites:
