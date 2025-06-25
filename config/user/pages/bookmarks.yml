@@ -260,4 +260,10 @@ categories:
         url: https://regex-vis.com
         icon: fas fa-link
         description: "在线正则匹配"
-      
+  - name: 土耳其礼品卡
+    icon: fas fa-folder
+    sites:
+      - name: 礼品卡
+        url: https://www.oyunfor.com/
+        icon: fas fa-link
+        description: "礼品卡"
