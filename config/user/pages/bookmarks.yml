@@ -267,3 +267,10 @@ categories:
         url: https://www.oyunfor.com/
         icon: fas fa-link
         description: "礼品卡"
+  - name: 金融
+    icon: fas fa-folder
+    sites:
+      - name: ibkr
+        url: https://ndcdyn.interactivebrokers.com
+        icon: fas fa-link
+        description: "ibkr"
