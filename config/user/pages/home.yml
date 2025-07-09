@@ -30,7 +30,7 @@ categories:
         url: "https://mail.163.com"
         icon: "fab fa-tablet-screen-button"
       - name: "proton"
-        url: "https://proton.me/mail"
+        url: "https://mail.proton.me"
         icon: "fab fa-tablet-screen-button"
       - name: "google mail"
         url: "https://mail.google.com"
