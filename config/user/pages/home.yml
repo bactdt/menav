@@ -23,6 +23,10 @@ categories:
         url: "https://dash.cloudflare.com"
         icon: "fab fa-link"
         description: "cloudfare"
+      - name: "B站大学"
+        url: "https://bilibili.com"
+        icon: "fab fa-link"
+        description: "哔哩哔哩"
   - name: "email"
     icon: "fas fa-wrench"
     sites:
