@@ -5,7 +5,7 @@ categories:                   # 该页面的分类和网站
     icon: "fas fa-code"
     sites:
       - name: "api-check"
-        url: "api-check-inky.vercel.app"
+        url: "https://api-check-inky.vercel.app"
         icon: "fab fa-v"
         description: "check-api"
       - name: "SubStore"
