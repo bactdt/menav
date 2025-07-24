@@ -1,7 +1,7 @@
 title: 我的书签
 template: bookmarks2
 
-bookmarks:
+categories:
   - name: 接码
     icon: fas fa-folder
     sites:
