@@ -5,6 +5,9 @@
 - name: 书签
   icon: fas fa-bookmark
   id: bookmarks 
+- name: 书签2
+  icon: fas fa-bookmark
+  id: bookmarks2
 - name: 小网站
   icon: fas fa-bookmark
   id: web
