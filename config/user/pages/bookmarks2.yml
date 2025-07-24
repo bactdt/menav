@@ -37,11 +37,3 @@ bookmarks:
         url: https://regex-vis.com
         icon: fas fa-link
         description: "在线正则匹配"
-
-  - name: ai
-    icon: fas fa-folder
-    sites:
-      - name: 流动硅基api检测
-        url: https://blog.useforall.com
-        icon: fas fa-link
-        description: "流动硅基api检测"
