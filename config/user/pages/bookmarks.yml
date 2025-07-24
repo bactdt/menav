@@ -1,7 +1,6 @@
 title: 我的书签
 subtitle: 从浏览器导入的书签收藏
 
-# 指定使用的模板文件名，现有页面模板可见templates\pages
 template: bookmarks
 
 categories:
@@ -91,33 +90,6 @@ categories:
         url: https://www.wehuster.com/
         icon: fas fa-link
         description: "四六级真题"
-  - name: 论坛
-    icon: fas fa-folder
-    sites:
-      - name: V2EX
-        url: https://www.v2ex.com
-        icon: fas fa-link
-        description: "V2EX"
-      - name: 全球主机
-        url: https://hostloc.com
-        icon: fas fa-link
-        description: "全球主机"
-      - name: NodeSeek
-        url: https://www.nodeseek.com
-        icon: fas fa-link
-        description: "NodeSeek"
-      - name: LINUX DO - 新的理想型社区
-        url: https://linux.do
-        icon: fas fa-linux
-        description: "LINUX"
-      - name: 数字居民论坛
-        url: https://shuzijumin.com
-        icon: fas fa-link
-        description: "数字居民论坛"
-      - name: ShareMjj
-        url: https://share.cjy.me
-        icon: fas fa-link
-        description: "ShareMjj"
   - name: 影视
     icon: fas fa-folder
     sites:
@@ -188,6 +160,10 @@ categories:
         url: https://www.promptgenius.site
         icon: fas fa-link
         description: "提示词国外"
+      - name: 流动硅基api检测
+        url: https://blog.useforall.com
+        icon: fas fa-link
+        description: "流动硅基api检测"
   - name: mac
     icon: fas fa-folder
     sites:
@@ -219,58 +195,5 @@ categories:
         url: https://3.jetbra.in
         icon: fas fa-link
         description: "Jetbra系破解"
-  - name: esim
-    icon: fas fa-mobile-screen-button
-    sites:
-      - name: eSIM 转 SIM 实体卡 | 回声
-        url: https://iecho.cc/2023/10/20/Convert-eSIM-to-physical-SIM/#Windows%E3%80%81macOS-%E5%92%8C-Linux-%E5%B9%B3%E5%8F%B0
-        icon: fas fa-link
-        description: "esim转换"
-  - name: 接码
-    icon: fas fa-folder
-    sites:
-      - name: 天启
-        url: https://web.tqsms.xyz/#/message/getCode
-        icon: fas fa-link
-        description: "天启"
-      - name: 豪猪
-        url: https://h5.haozhuma.cn/index.php
-        icon: fas fa-link
-        description: "豪猪"
-      - name: 椰子
-        url: http://yezi779.com:90/
-        icon: fas fa-link
-        description: "椰子"
-      - name: 谷歌临时邮箱
-        url: https://22.do
-        icon: fas fa-link
-        description: "谷歌临时邮箱"
-  - name: 好玩的东东
-    icon: fas fa-folder
-    sites:
-      - name: 朋友圈点赞生成器
-        url: https://akarin.dev/WechatMomentScreenshot/
-        icon: fas fa-link
-        description: "好玩的东东"
-      - name: 粤语翻译
-        url: https://yue.micblo.com
-        icon: fas fa-link
-        description: "粤语翻译"
-      - name: 在线正则匹配
-        url: https://regex-vis.com
-        icon: fas fa-link
-        description: "在线正则匹配"
-  - name: 土耳其礼品卡
-    icon: fas fa-folder
-    sites:
-      - name: 礼品卡
-        url: https://www.oyunfor.com/
-        icon: fas fa-link
-        description: "礼品卡"
-  - name: 金融
-    icon: fas fa-folder
-    sites:
-      - name: ibkr
-        url: https://ndcdyn.interactivebrokers.com
-        icon: fas fa-link
-        description: "ibkr"
+
+  
