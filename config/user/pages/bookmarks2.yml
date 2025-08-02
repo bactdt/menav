@@ -2,6 +2,13 @@ title: 我的书签
 template: bookmarks2
 
 categories:
+  - name: 隐私
+    icon: fas fa-mobile-screen-button
+    sites:
+      - name: 链接去跟踪
+        url: https://tr.lizi.su
+        icon: fas fa-link
+        description: "链接去跟踪"
   - name: esim
     icon: fas fa-mobile-screen-button
     sites:
