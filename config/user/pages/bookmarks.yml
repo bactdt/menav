@@ -1,0 +1,199 @@
+title: 我的书签
+subtitle: 从浏览器导入的书签收藏
+
+template: bookmarks
+
+categories:
+  - name: "谷歌系"
+    icon: fas fa-folder
+    sites:
+      - name: "youtube"
+        url: "https://youtube.com/"
+        icon: fab fa-youtube
+        description: "youtube"
+      - name: 云端硬盘
+        url: https://drive.google.com/drive/my-drive
+        icon: fab fa-google-drive
+      - name: blooger
+        url: https://www.blogger.com/
+        icon: fa fa-blogger
+  - name: "开发者的好助手"
+    icon: fas fa-folder
+    sites:
+      - name: "clerk"
+        url: "https://clerk.com"
+        icon: fab fa-link
+        description: "clerk"
+      - name: "upstash"
+        url: "https://console.upstash.com"
+        icon: fab fa-link
+        description: "upstash 免费Redis"
+      - name: "vercel"
+        url: "https://vercel.com"
+        icon: fab fa-link
+        description: "vercel"
+      - name: 正则学习
+        url: https://regexr.com
+        icon: fas fa-link
+        description: "正则学习"
+  - name: "图床"
+    icon: fas fa-folder
+    sites:
+      - name: "图床"
+        url: https://www.superbed.cn
+        icon: fab fa-images
+        description: " 图床"
+      - name: "picgo 免费图床" 
+        url: "https://www.picgo.net"
+        icon: fab fa-images
+        description: "picgo图床"
+  - name: 学习
+    icon: fas fa-folder
+    sites:
+      - name: 蓝桥
+        url: https://www.lanqiao.cn/cup/select-subject/
+        icon: fab fa-gamepad
+        description: "蓝桥"
+      - name: 力扣
+        url: https://neetcode.io/roadmap
+        icon: fab fa-github
+        description: "力扣"
+      - name: pta
+        url: https://pintia.cn/problem-sets/dashboard
+        icon: fab fa-link
+        description: "pta"
+      - name: 题库
+        url: https://acmore.cc/
+        icon: fas fa-link
+        description: "题库"
+      - name: 资源统计
+        url: http://zkdmt.vipexam.cn/sdtsglogin.html
+        icon: fas fa-link
+        description: "资源统计"
+      - name: "MIT18.01/18.02: Calculus - CS自学指南"
+        url: https://csdiy.wiki
+        icon: fas fa-link
+        description: "CS自学指南"
+      - name: 全国计算机技术与软件专业技术资格（水平）考试
+        url: https://bm.ruankao.org.cn/sign/up
+        icon: fas fa-link
+        description: "软考"
+      - name: C语言学习 | Home
+        url: http://oj.lgwenda.com/
+        icon: fas fa-link
+        description: "c语言"
+      - name: 软考资料分享
+        url: https://docs.qq.com/sheet/DY2xrbXVYb0xBc1N4?tab=BB08J2
+        icon: fas fa-link
+        description: "软考资料分享"
+      - name: 四六级真题
+        url: https://www.wehuster.com/
+        icon: fas fa-link
+        description: "四六级真题"
+  - name: 影视
+    icon: fas fa-folder
+    sites:
+      - name: 不太灵影视_4k高清电影下载_蓝光迅雷电影下载_最新电视剧下载
+        url: https://www.2bt0.com/
+        icon: fas fa-link
+        description: "不太灵影视"
+      - name: WarHut影视
+        url: https://v.warhut.cn/
+        icon: fas fa-link
+        description: "WarHut影视"
+      - name: 青年影视
+        url: https://tv.52qn.top/
+        icon: fas fa-link
+        description: "青年影视"
+      - name: 灰太狼影视 - 影视大全在线追剧
+        url: https://www.minjiancai.com/?btwaf=78325134
+        icon: fas fa-link
+        description: "灰太狼影视"
+      - name: 观影 GYING
+        url: https://www.gyg.la/
+        icon: fas fa-link
+        description: "观影"
+  - name: ai
+    icon: fas fa-folder
+    sites:
+      - name: dmxapi
+        url: https://www.dmxapi.com/token
+        icon: fas fa-link
+        description: "dmxapi"
+      - name: promote
+        url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh?tab=readme-ov-file
+        icon: fab fa-github
+        description: "promote提示词"
+      - name: Linux Do – Chat Web UI for Linux Do
+        url: https://typingmind-linuxdo.pages.dev/
+        icon: fas fa-link
+        description: "Chat Web UI"
+      - name: DEV API
+        url: https://api.crond.dev/token
+        icon: fas fa-link
+        description: "DEV"
+      - name: NextChat
+        url: https://chat.toapis.org/#/chat
+        icon: fas fa-link
+        description: "NextChat"
+      - name: HF Space Manager -控制面板
+        url: https://esesseska-apikey.hf.space/dashboard
+        icon: fas fa-link
+        description: "HF Space Manager"
+      - name: 示例工作区 - AI as Workspace
+        url: https://aiaw.app/workspaces/1ij5knvrk48ogpmmnm
+        icon: fas fa-link
+        description: "AI as Workspace"
+      - name: EAI API
+        url: https://api.cymru/pricing
+        icon: fas fa-link
+        description: "EAI API"
+      - name: 提示词
+        url: https://www.aishort.top
+        icon: fas fa-link
+        description: "提示词分享网站"
+      - name: 提示词记事本
+        url: https://accounts.prompt-manager.19921014.xyz/sign-in
+        icon: fas fa-link
+        description: "提示词记事本"
+      - name: 提示词国外
+        url: https://www.promptgenius.site
+        icon: fas fa-link
+        description: "提示词国外"
+      - name: 流动硅基api检测
+        url: https://blog.useforall.com
+        icon: fas fa-link
+        description: "流动硅基api检测"
+  - name: mac
+    icon: fas fa-folder
+    sites:
+      - name: MacApp分享频道 - 精品Mac资源分享
+        url: https://macapp.org.cn/
+        icon: fas fa-link
+        description: "MacApp分享频道"
+      - name: MacKed
+        url: https://macked.app/
+        icon: fas fa-link
+        description: "MacKed"
+      - name: JetBrains 系列全家桶激活服务器
+        url: https://jetbrains-plum.vercel.app
+        icon: fas fa-link
+        description: "JetBrains 系列全家桶激活服务器"
+      - name: JetBrains 系列全家桶激活服务器
+        url: https://jbls.ide-soft.com
+        icon: fas fa-link
+        description: "JetBrains 系列全家桶激活服务器"
+      - name: mac开源平替
+        url: https://www.thriftmac.com
+        icon: fas fa-link
+        description: "mac开源平替"
+      - name: windows破解
+        url: http://www.qiuquan.cc
+        icon: fas fa-link
+        description: "windows破解"
+      - name: Jetbra系
+        url: https://3.jetbra.in
+        icon: fas fa-link
+        description: "Jetbra系破解"
+
+  
