@@ -69,6 +69,10 @@ categories:
         url: https://share.cjy.me
         icon: fas fa-link
         description: "ShareMjj"
+      - name: 奶昔
+        url: https://forum.naixi.net/forum.php
+        icon: fas fa-link
+        description: "奶昔论坛"
   - name: "在线网站"          
     icon: "fas fa-wrench"     
     sites:
