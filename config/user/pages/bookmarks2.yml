@@ -35,7 +35,18 @@ categories:
         url: https://22.do
         icon: fas fa-link
         description: "谷歌临时邮箱"
-
+  - name: cli 站点
+    icon: fas fa-folder
+    sites:
+      - name: anyrouter
+        url: https://docs.anyrouter.top/
+        icon: fas fa-link
+        description: "anyrouter"
+      - name: Bu4公益
+        url: https://b4u.qzz.io/console
+        icon: fas fa-link
+        description: "Bu4"
+      
   - name: 好玩的东东
     icon: fas fa-folder
     sites:
