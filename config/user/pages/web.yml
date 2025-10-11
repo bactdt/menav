@@ -20,5 +20,13 @@ categories:                   # 该页面的分类和网站
         url: "https://email.221041.xyz/"
         icon: "fas fa-link"
         description: "基于cloudfare的临时邮箱网站"
+      - name: "webssh"
+        url: "https://webssh.bactdt.workers.dev/"
+        icon: "fas fa-link"
+        description: "webssh"
+      - name: "cock"
+        url: "https://cockli.serv00.net/"
+        icon: "fas fa-link"
+        description: "cockli"      
       
       # 更多网站...
