@@ -164,6 +164,10 @@ categories:
         url: https://blog.useforall.com
         icon: fas fa-link
         description: "流动硅基api检测"
+      - name: cto.io
+        url: https://cto.new
+        icon: fas fa-link
+        description: "CTO"
   - name: mac
     icon: fas fa-folder
     sites:
