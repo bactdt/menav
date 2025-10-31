@@ -46,6 +46,10 @@ categories:
         url: https://b4u.qzz.io/console
         icon: fas fa-link
         description: "Bu4"
+      - name: 付费
+        url: https://poloai.top/console/topup
+        icon: fas fa-link
+        description: "poloai" 
       
   - name: 好玩的东东
     icon: fas fa-folder
