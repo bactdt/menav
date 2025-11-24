@@ -34,4 +34,4 @@ tests/fixtures/
 *.spec.js
 # SpecStory explanation file
 .specstory/.what-is-this.md
-config/user/site.yml
+config/user/**/*.yml

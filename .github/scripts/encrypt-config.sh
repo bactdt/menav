@@ -2,7 +2,7 @@
 
 # 检查密码参数
 if [ -z "$1" ]; then
-  read -sp "请输入解密密码: " PASSWORD
+  read -sp "请输入加密密码: " PASSWORD
   echo
 else
   PASSWORD="$1"
@@ -13,7 +13,7 @@ if [ -z "$PASSWORD" ]; then
   exit 1
 fi
 
-echo "🔓 开始解密 config/user 目录下的所有 .enc 文件..."
+echo "🔐 开始加密 config/user 目录下的所有 .yml 文件..."
 echo ""
 
 # 统计变量
@@ -21,30 +21,30 @@ total=0
 success=0
 failed=0
 
-# 查找并解密所有 .enc 文件
-while IFS= read -r enc_file; do
+# 查找并加密所有 .yml 文件
+while IFS= read -r file; do
   total=$((total + 1))
-  original_file="${enc_file%.enc}"
+  echo "[$total] 加密: $file"
   
-  echo "[$total] 解密: $enc_file"
-  echo "    -> $original_file"
-  
-  if openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 \
-    -in "$enc_file" \
-    -out "$original_file" \
+  if openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 \
+    -in "$file" \
+    -out "${file}.enc" \
     -k "$PASSWORD" 2>/dev/null; then
-    echo "    ✅ 成功"
+    echo "    ✅ 成功: ${file}.enc"
     success=$((success + 1))
   else
     echo "    ❌ 失败"
     failed=$((failed + 1))
   fi
   echo ""
-done < <(find config/user -name "*.yml.enc" -type f)
+done < <(find config/user -name "*.yml" -type f)
 
 echo "================================"
-echo "解密完成！"
+echo "加密完成！"
 echo "总计: $total 个文件"
 echo "成功: $success 个"
 echo "失败: $failed 个"
 echo "================================"
+echo ""
+echo "生成的加密文件:"
+find config/user -name "*.enc" -type f

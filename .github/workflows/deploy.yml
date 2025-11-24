@@ -22,10 +22,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        # 使用persist-credentials: false，以便后续步骤可以使用自定义的提交者
         with:
           persist-credentials: false 
-          fetch-depth: 0 # 获取所有历史记录以进行diff检查
+          fetch-depth: 0
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,6 +34,42 @@ jobs:
           
       - name: Install dependencies
         run: npm install
+        
+      # ============ 解密配置文件（新增）============
+      - name: Decrypt configuration files
+        run: |
+          chmod +x .github/scripts/decrypt-config.sh
+          .github/scripts/decrypt-config.sh
+        env:
+          CONFIG_PASSPHRASE: ${{ secrets.CONFIG_PASSPHRASE }}
+      
+      - name: Verify decrypted configs
+        run: |
+          echo "检查配置文件是否已解密..."
+          if [ -f config/user/site.yml ]; then
+            echo "✅ site.yml 已解密"
+            head -n 3 config/user/site.yml
+          else
+            echo "❌ site.yml 解密失败"
+            exit 1
+          fi
+          
+          if [ -f config/user/navigation.yml ]; then
+            echo "✅ navigation.yml 已解密"
+          else
+            echo "❌ navigation.yml 解密失败"
+            exit 1
+          fi
+
+          if [ -d config/user/pages ]; then
+            count=$(find config/user/pages -name "*.yml" | wc -l)
+            if [ "$count" -gt 0 ]; then
+              echo "✅ config/user/pages/ 下已解密 $count 个文件"
+            else
+              echo "⚠️ config/user/pages/ 下没有找到 .yml 文件 (可能是空的或解密失败)"
+            fi
+          fi
+      # ============ 解密步骤结束 ============
         
       # --- 书签处理步骤 --- 
       - name: Check for bookmark HTML files
@@ -79,12 +114,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action (Bookmarks)"
           
-          # Check if config/user/pages/bookmarks.yml exists
           if [ -f config/user/pages/bookmarks.yml ]; then
-            # Check if this is a new file or it has changes
             if git ls-files --error-unmatch config/user/pages/bookmarks.yml 2>/dev/null; then
               echo "config/user/pages/bookmarks.yml exists and is tracked by git"
-              # Check if it has changes
               if ! git diff --quiet config/user/pages/bookmarks.yml; then
                 echo "config/user/pages/bookmarks.yml has changes, committing..."
                 git add config/user/pages/bookmarks.yml
@@ -98,7 +130,6 @@ jobs:
               git commit -m "Add bookmarks configuration from imported bookmarks"
             fi
             
-            # Also check for navigation file changes
             if [ -f config/user/navigation.yml ]; then
               if ! git diff --quiet config/user/navigation.yml; then
                 echo "config/user/navigation.yml has changes, committing..."
@@ -115,7 +146,6 @@ jobs:
       - name: Clean up processed bookmark files
         if: steps.check_bookmark_files.outputs.found == 'true'
         run: |
-          # 先记录当前HTML文件列表
           HTML_FILES=$(find bookmarks -type f -name "*.html" 2>/dev/null)
           if [ -n "$HTML_FILES" ]; then 
              git config --local user.email "action@github.com"
@@ -123,19 +153,15 @@ jobs:
              echo "HTML files before cleanup:"
              echo "$HTML_FILES" | tee html_files_before.txt
              
-             # 计算文件数量
              FILE_COUNT=$(echo "$HTML_FILES" | wc -l)
              echo "Found $FILE_COUNT HTML files to clean up."
              
-             # 执行删除操作
              echo "Cleaning up HTML files..."
              find bookmarks -type f -name "*.html" -delete
              
-             # 验证文件已被删除
              REMAINING=$(find bookmarks -type f -name "*.html" 2>/dev/null)
              if [ -z "$REMAINING" ]; then
                echo "All HTML files successfully deleted."
-               # 不管git diff结果如何，只要有文件被删除就提交
                git add bookmarks/
                git commit -m "Clean up processed bookmark files ($FILE_COUNT files removed)"
                echo "Changes committed."
@@ -149,8 +175,6 @@ jobs:
       # --- 书签处理步骤结束 ---
 
       - name: Push configuration changes (if any)
-        # 只有在书签处理步骤修改了文件时才推送
-        # 使用 GITHUB_TOKEN 推送
         if: steps.check_bookmark_files.outputs.found == 'true'
         run: |
           echo "Checking git status before pushing..."
@@ -180,8 +204,6 @@ jobs:
             ls -l dist/favicon.ico
           else
             echo "Warning: favicon.ico not found in dist directory"
-            # 暂时改为警告，避免因为图标问题阻止部署
-            # exit 1 
           fi
         
       - name: Setup Pages
@@ -194,4 +216,4 @@ jobs:
           
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
