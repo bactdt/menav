@@ -275,9 +275,13 @@ npm run build
 1. 创建个人配置文件:
    - **重要:** 始终创建自己的用户配置文件，不要直接修改默认配置文件
    - 使用模块化配置（见[使用模块化配置](#使用模块化配置)）
+   - (可选) 使用加密功能保护隐私（见[配置加密](#配置加密推荐)）
    - 提交您的配置文件到仓库
 
-2. 等待自动部署:
+2. 设置密钥 (如果使用了加密):
+   - 在仓库 Settings -> Secrets and variables -> Actions 中添加 `CONFIG_PASSPHRASE`
+
+3. 等待自动部署:
    - GitHub Actions会自动检测您的更改
    - 构建并部署您的网站
    - 部署完成后，您可以在 Settings -> Pages 中找到您的网站地址
@@ -404,6 +408,36 @@ MeNav的配置系统分为三个主要部分，对应三种不同类型的配置
 3. `pages/` 目录 - 各页面的内容配置
 
 以下详细介绍每个配置文件的结构和用途。
+
+### 配置加密（推荐）
+
+为了保护您的个人隐私（如社交账号、具体站点信息等），MeNav 支持对 `config/user/` 目录下的配置文件进行加密。加密后的文件可以安全地提交到公开仓库，而不用担心隐私泄露。
+
+#### 1. 本地加密
+
+在提交代码前，运行以下脚本对配置文件进行加密：
+
+```bash
+# 使用您的密码进行加密
+./.github/scripts/encrypt-config.sh "您的密码"
+```
+
+脚本会自动：
+1. 加密 `config/user/` 下的所有 `.yml` 文件
+2. 生成对应的 `.enc` 文件
+3. 您只需要提交 `.enc` 文件即可（`.yml` 文件已被 git 忽略）
+
+#### 2. 配置 GitHub Secrets
+
+为了让 GitHub Actions 能正确解密并部署您的网站，需要设置密钥：
+
+1. 进入仓库的 **Settings** -> **Secrets and variables** -> **Actions**
+2. 点击 **New repository secret**
+3. Name 填写 `CONFIG_PASSPHRASE`
+4. Secret 填写您加密时使用的密码
+5. 点击 **Add secret** 保存
+
+---
 
 ### 一、site.yml 配置文件
 
