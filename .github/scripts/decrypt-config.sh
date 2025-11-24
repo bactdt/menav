@@ -50,3 +50,8 @@ echo "总计: $total 个文件"
 echo "成功: $success 个"
 echo "失败: $failed 个"
 echo "================================"
+
+if [ "$failed" -gt 0 ]; then
+  echo "❌ 严重错误: 有 $failed 个文件解密失败"
+  exit 1
+fi

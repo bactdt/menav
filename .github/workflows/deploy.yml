@@ -70,6 +70,11 @@ jobs:
             fi
           fi
       # ============ 解密步骤结束 ============
+      
+      - name: Debug decrypted files
+        run: |
+          echo "Listing config/user directory recursively:"
+          ls -R config/user
         
       # --- 书签处理步骤 --- 
       - name: Check for bookmark HTML files
