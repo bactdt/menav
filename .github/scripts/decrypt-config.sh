@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # 检查密码参数
-if [ -z "$1" ]; then
+if [ -n "$1" ]; then
+  PASSWORD="$1"
+elif [ -n "$CONFIG_PASSPHRASE" ]; then
+  PASSWORD="$CONFIG_PASSPHRASE"
+else
   read -sp "请输入解密密码: " PASSWORD
   echo
-else
-  PASSWORD="$1"
 fi
 
 if [ -z "$PASSWORD" ]; then
