@@ -31,7 +31,7 @@ while IFS= read -r enc_file; do
   echo "[$total] 解密: $enc_file"
   echo "    -> $original_file"
   
-  if openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 \
+  if openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -md sha256 \
     -in "$enc_file" \
     -out "$original_file" \
     -k "$PASSWORD" 2>/dev/null; then

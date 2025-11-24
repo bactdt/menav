@@ -28,7 +28,7 @@ while IFS= read -r file; do
   total=$((total + 1))
   echo "[$total] 加密: $file"
   
-  if openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 \
+  if openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 -md sha256 \
     -in "$file" \
     -out "${file}.enc" \
     -k "$PASSWORD" 2>/dev/null; then
