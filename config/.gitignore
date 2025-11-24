@@ -1,0 +1,8 @@
+
+# 忽略未加密的配置文件
+config/user/site.yml
+config/user/navigation.yml
+config/user/pages/*.yml
+# 但允许加密文件
+!config/user/*.enc
+!config/user/pages/*.enc
